@@ -105,7 +105,7 @@ It’s a good idea to set the Local Path so that the last directory name is the 
 
 /…/your GitHub Repository Name
 
-:::note info
+::: note
 8-2. Set the following files types to Ignored Files.
 :::
 Repository > Repository Settings > Ignored Files
