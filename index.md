@@ -116,6 +116,7 @@ Repository > Repository Settings > Ignored Files
 .gitignore
 :::
 
+![](https://github.com/graphicalbudgeting/backend-config-github-doc/resources/ignoredfiles.png)
 
 ## 9. Download Application Configuration For Graphical Budgeting
 
