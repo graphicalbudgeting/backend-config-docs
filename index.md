@@ -1,12 +1,12 @@
-# Set up the Graphical Budgeting Backend
+# Set up the Graphical Budgeting Backend with GitHub
 ## OverView
 This document describes how to set up MongoDB Cloud as a backend for Graphical Budgeting.
 
 Your understanding of MongoDB Realm and Atlas will help you in the following steps.
 
-[aaa](https://docs.mongodb.com/realm/)
+<https://docs.mongodb.com/realm/>
 
-https://docs.atlas.mongodb.com
+<https://docs.atlas.mongodb.com>
 
 
 To use MongoDB Cloud, you'll need a MongoDB Atlas account first.
@@ -17,27 +17,27 @@ Your Realm App for Graphical Budgeting should be created and updated using the R
 As the deployment method, you can choose Automatic GitHub Deployment or Realm CLI.
 This document explains how to deploy with GitHub.
 
-https://docs.mongodb.com/realm/deploy/deploy-automatically-with-github/
+<https://docs.mongodb.com/realm/deploy/deploy-automatically-with-github/>
 
 In this document, git operations are described assuming the use of GitHub Desktop.
 
 
 The general flow is the same as in the Set up the Task Tracker Tutorial Backend, so please refer to the following links as well.
 
-https://docs.mongodb.com/realm/tutorial/realm-app/
+<https://docs.mongodb.com/realm/tutorial/realm-app/>
 
 ## 1. Create an atlas account
 Create your Atlas Account. After logging in, create an Atlas Organization and then create a Project.
 
-https://docs.atlas.mongodb.com/tutorial/create-atlas-account/
+<https://docs.atlas.mongodb.com/tutorial/create-atlas-account/>
 
 ## 2. Create an atlas Cluster
 
 Create your Atlas Cluster for your Graphical Budgeting Realm App.
 
-https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/
+<https://docs.atlas.mongodb.com/tutorial/deploy-free-tier-cluster/>
 
-https://docs.atlas.mongodb.com/tutorial/create-new-cluster/
+<https://docs.atlas.mongodb.com/tutorial/create-new-cluster/>
 
 ### Note
 Do not select the serverless instance for database deployment type, as it is a preview release and has not been tested in Graphical Budgeting.
@@ -46,23 +46,23 @@ Do not select the serverless instance for database deployment type, as it is a p
 
 Create a GitHub account first.
 
-https://github.com
+<https://github.com>
 
 Create your GitHub Repository for your Graphical Budgeting Realm App.
 
-https://docs.github.com/en/get-started/quickstart/create-a-repo
+<https://docs.github.com/en/get-started/quickstart/create-a-repo>
 
 ### Note
 You must check “Initialize this repository with a README”. Otherwise, the branch will not be created and you will not be able to complete the GitHub Setting at the App Deployment.
 
-https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository
+<https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/creating-and-deleting-branches-within-your-repository>
 
 
 ## 4. Create a Realm App
 
 Realm App can be created by MongoDB Atlas UI.
 
-https://docs.mongodb.com/realm/get-started/create-realm-app/
+<https://docs.mongodb.com/realm/get-started/create-realm-app/>
 
 ### Note
 You can set up the GitHub to connect to when you create a Realm App, do not set it up now.
@@ -73,7 +73,7 @@ We will be setting it up in the next step.
 
 Configure automatic deployment with GitHub for your Realm app you just created.
 
-https://docs.mongodb.com/realm/deploy/deploy-automatically-with-github/
+<https://docs.mongodb.com/realm/deploy/deploy-automatically-with-github/>
 
 ### Note
 Perform only steps 1, 2 and 4.
@@ -82,23 +82,23 @@ Perform only steps 1, 2 and 4.
 
 Realm App Configuration is provided by Graphical Budgeting, but realm_config.json should be replaced with the one of your environment. Export your Realm App Configuration to get that.
 
-https://docs.mongodb.com/realm/deploy/export-realm-app/
+<https://docs.mongodb.com/realm/deploy/export-realm-app/>
 
 ## 7. Install GitHub Desktop on your client and Authenticate to GitHub
 
 7-1. Install GitHub Desktop on your client.
 
-https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop
+<https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop>
 
 7-2. Authenticating an account on GitHub.
 
-https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github
+<https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/authenticating-to-github>
 
 ## 8. Setting up GitHub Desktop
 
 8-1. Clone your repository.
 
-https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository
+<https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop#cloning-a-repository>
 
 ### Note
 It’s a good idea to set the Local Path so that the last directory name is the same as the repository name.
@@ -110,9 +110,12 @@ It’s a good idea to set the Local Path so that the last directory name is the 
 
 Repository > Repository Settings > Ignored Files
 
+:::note info
 .DS_Store
 .gitattributes
 .gitignore
+:::
+
 
 ## 9. Download Application Configuration For Graphical Budgeting
 
@@ -120,7 +123,7 @@ Of course, you can run the git clone command or use GitHub Desktop, we'll simply
 
 Access to the Graphical Budgeting Repository on the GitHub, select the Code tab and click the Code button. Then you can see Download Zip and click it.
 
-https://github.com/graphicalbudgeting/backend-config
+<https://github.com/graphicalbudgeting/backend-config>
 
 
 ## 10. Extract the downloaded zip file and Override realm_config.json
@@ -141,4 +144,3 @@ The name of the root directory of the file that Graphical Budgeting provide is <
 ## 12. Verify that the Graphical Budgeting Backend is Properly Configured
 
 Click Deployment in the left navigation menu of the Realm UI and select the History tab, then you can see the deployment history. Check the latest deployment status.
-
