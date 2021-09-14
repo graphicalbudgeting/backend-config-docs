@@ -105,16 +105,13 @@ It’s a good idea to set the Local Path so that the last directory name is the 
 
 /…/your GitHub Repository Name
 
-::: note
 8-2. Set the following files types to Ignored Files.
-:::
+
 Repository > Repository Settings > Ignored Files
 
-:::note info
-.DS_Store
-.gitattributes
-.gitignore
-:::
+>.DS_Store<br>
+>.gitattributes<br>
+>.gitignore<br>
 
 ![](https://graphicalbudgeting.github.io/backend-config-github-doc//resources/ignoredfiles.png)
 
